@@ -7,27 +7,30 @@ const pages = [{
     page: "/pages/home.html",
 },
 {
+    path: "/research.html",
+    page: "/pages/research.html",
+    navBtn: 'nav-research',
+},               
+{
     path: "/publication.html",
     page: "/pages/publication.html",
     navBtn: 'nav-publication',
 },
 {
-    path: "/mgpusim.html",
-    page: "/pages/mgpusim.html",
-},
-{
-    path: "/blog.html",
-    page: "/pages/blog.html",
-    navBtn: 'nav-blog'
-},
-{
     path: "/teaching.html",
     page: "/pages/teaching.html",
+    navBtn: 'nav-teaching',
 },
 {
-    path: "/software.html",
-    page: "/pages/software.html",
+    path: "/presentation.html",
+    page: "/pages/presentation.html",
+    navBtn: 'nav-presentation',
 },
+{
+    path: "/contact.html",
+    page: "/pages/contact.html",
+    navBtn: 'nav-contact',
+},               
 ]
 
 $(document).ready(() => {
@@ -37,20 +40,24 @@ $(document).ready(() => {
         jumpTo("/")
     })
 
+    $('#nav-research').click(() => {
+        jumpTo("research.html")
+    })
+    
     $('#nav-publication').click(() => {
         jumpTo("publication.html")
     })
-
-    $('#nav-teaching').click(() => {
+    
+     $('#nav-teaching').click(() => {
         jumpTo("teaching.html")
     })
-
-    $('#nav-software').click(() => {
-        jumpTo("software.html")
+    
+    $('#nav-presentation').click(() => {
+        jumpTo("presentation.html")
     })
 
-    $('#nav-blog').click(() => {
-        jumpTo("blog.html")
+    $('#nav-contact').click(() => {
+        jumpTo("contact.html")
     })
 })
 
