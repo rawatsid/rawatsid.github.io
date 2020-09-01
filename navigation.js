@@ -25,12 +25,7 @@ const pages = [{
     path: "/presentation.html",
     page: "/pages/presentation.html",
     navBtn: 'nav-presentation',
-},
-{
-    path: "/contact.html",
-    page: "/pages/contact.html",
-    navBtn: 'nav-contact',
-},               
+},           
 ]
 
 $(document).ready(() => {
@@ -54,10 +49,6 @@ $(document).ready(() => {
     
     $('#nav-presentation').click(() => {
         jumpTo("presentation.html")
-    })
-
-    $('#nav-contact').click(() => {
-        jumpTo("contact.html")
     })
 })
 
